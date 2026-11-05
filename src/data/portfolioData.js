@@ -122,7 +122,22 @@ export const technicalSkills = {
   ],
 };
 
-export const leadershipList = [];
+export const leadershipList = [
+  {
+    title: "Cross-Functional Incident Taskforce",
+    role: "Application Support Anchor",
+    description:
+      "Spearheaded root-cause investigations for recurring business transaction discrepancies, collaborating across database and engineering units to shorten resolution turnaround.",
+    badge: "Coordination",
+  },
+  {
+    title: "RGUKT Campus Technical Community",
+    role: "Data Analytics Mentor",
+    description:
+      "Guided students in relational database concepts, query optimization, and spreadsheet modeling, conducting interactive SQL problem-solving sessions.",
+    badge: "Mentorship",
+  },
+];
 
 export const internshipsList = [
   {
