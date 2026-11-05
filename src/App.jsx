@@ -1,3 +1,4 @@
+import { internshipsList, leadershipList } from './data/portfolioData'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -10,18 +11,16 @@ import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col justify-between">
+    <>
       <Navbar />
-      <main className="flex-grow">
-        <Hero />
-        <About />
-        <TechnicalSkills />
-        <Projects />
-        <Internships />
-        <Leadership />
-        <SoftSkills />
-      </main>
+      <Hero />
+      <About />
+      <TechnicalSkills />
+      <Projects />
+      {internshipsList && internshipsList.length > 0 && <Internships />}
+      {leadershipList && leadershipList.length > 0 && <Leadership />}
+      <SoftSkills />
       <Footer />
-    </div>
+    </>
   )
 }
