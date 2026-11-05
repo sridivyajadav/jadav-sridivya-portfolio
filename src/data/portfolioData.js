@@ -124,7 +124,19 @@ export const technicalSkills = {
 
 export const leadershipList = [];
 
-export const internshipsList = [];
+export const internshipsList = [
+  {
+    organization: "Enterprise Support & Solutions",
+    role: "Application Support & SQL Developer",
+    duration: "2+ Years Experience",
+    skills: [
+      "Supported core business applications and resolved high-volume transaction anomalies",
+      "Developed and optimized SQL queries, stored procedures, and validated records",
+      "Conducted root-cause analysis and coordinated cross-functionally with technical teams",
+    ],
+    tech: ["SQL Server", "Stored Procedures", "Excel", "Data Validation"],
+  },
+];
 
 export const softSkillsList = [
   {
