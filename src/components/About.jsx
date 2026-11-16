@@ -65,7 +65,7 @@ export default function About() {
                 {/* Portrait Image */}
                 <img
                   src={stackImage}
-                  alt={personalInfo.name}
+                  alt="Jadav SriDivya — Data Analyst, TAP Academy student"
                   className="rounded-xl object-cover object-top w-full h-[calc(100%-18px)] shadow-inner"
                 />
               </div>
