@@ -1,6 +1,4 @@
-import { useRef, useEffect, useState } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import { useRef, useState } from 'react'
 import heroVideo from '../assets/hero/hero.mp4'
 import heroPoster from '../assets/about/profile.png'
 import { heroContent, socialLinks } from '../data/portfolioData'
@@ -8,13 +6,6 @@ import { heroContent, socialLinks } from '../data/portfolioData'
 export default function Hero() {
   const videoRef = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
-
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true, easing: 'ease-out' })
-    const handleLoad = () => AOS.refresh()
-    window.addEventListener('load', handleLoad)
-    return () => window.removeEventListener('load', handleLoad)
-  }, [])
 
   const toggleVideo = (e) => {
     e.stopPropagation()

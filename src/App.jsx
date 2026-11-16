@@ -1,3 +1,6 @@
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { internshipsList, leadershipList } from './data/portfolioData'
 import SplashCursor from './components/SplashCursor'
 import Preloader from './components/Preloader'
@@ -14,6 +17,14 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
+  // Initialise AOS once at the app level so all sections animate correctly
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true, easing: 'ease-out' })
+    const handleLoad = () => AOS.refresh()
+    window.addEventListener('load', handleLoad)
+    return () => window.removeEventListener('load', handleLoad)
+  }, [])
+
   return (
     <>
       <SplashCursor
