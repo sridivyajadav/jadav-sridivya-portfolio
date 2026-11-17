@@ -2,7 +2,7 @@
 
 A high-performance single-page developer portfolio showcasing data analytics projects, SQL query optimization, reporting dashboards, and technical competencies.
 
-**Live site:** https://YOUR-SITE-URL/
+**Live site:** https://jadav-sridivya-portfolio.vercel.app/
 
 Built during the placement training program at [TAP Academy](https://thetapacademy.com/) (full-stack development, AI and augmented reality training).
 
